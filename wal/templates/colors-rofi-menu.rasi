@@ -1,0 +1,88 @@
+configuration {{
+  font: "Iosevka Term Medium 14";
+
+  drun {{
+    display-name: "";
+  }}
+
+  run {{
+    display-name: "";
+  }}
+
+  window {{
+    display-name: "";
+  }}
+
+  timeout {{
+    delay: 10;
+    action: "kb-cancel";
+  }}
+}}
+
+* {{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: {background};
+  bg-alt: {color0};
+  fg: {foreground};
+  fg-alt: {color5};
+  color2: {color2};
+
+  background-color: @bg;
+  text-color: @fg;
+}}
+
+window {{
+  transparency: "real";
+  width: 700px;
+  border: 6px;
+  border-color: argb:1A000000;
+}}
+
+mainbox {{
+  children: [inputbar, listview];
+}}
+
+inputbar {{
+  background-color: argb:1A000000;
+  children: [prompt, entry];
+}}
+
+entry {{
+  background-color: inherit;
+  padding: 12px 3px;
+}}
+
+prompt {{
+  background-color: inherit;
+  padding: 12px;
+}}
+
+listview {{
+  lines: 8;
+}}
+
+element {{
+  children: [element-icon, element-text];
+}}
+
+element-icon {{
+  padding: 10px 10px;
+  size: 20px;
+}}
+
+element-text {{
+  padding: 10px 0;
+}}
+
+element-text selected {{
+  text-color: @bg;
+  background-color: @color2;
+}}
+
+element-icon selected {{
+  background-color: @color2;
+}}

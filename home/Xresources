@@ -1,0 +1,12 @@
+#include ".cache/wal/colors-me.Xresources"
+
+herbe.font_pattern: Iosevka Term Semibold:size=16
+herbe.line_spacing: 10
+herbe.padding: 15
+herbe.width: 700
+herbe.border_size: 2
+herbe.pos_x: 30
+herbe.pos_y: 60
+! 0 = TOP_LEFT, 1 = TOP_RIGHT, 2 = BOTTOM_LEFT, 3 = BOTTOM_RIGHT
+herbe.corner: 0
+herbe.duration: 5

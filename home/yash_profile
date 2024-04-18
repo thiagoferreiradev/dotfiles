@@ -1,0 +1,5 @@
+export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export LANG=pt_BR.UTF-8
+export CFLAGS="-O2 -march=native -pipe"
+export CXXFLAGS="$CFLAGS"
+export MAKEFLAGS=-j2

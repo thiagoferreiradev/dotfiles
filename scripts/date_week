@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -- "Segunda-Feira" "Terça-Feira" "Quarta-Feira" "Quinta-Feira" "Sexta-Feira" "Sábado" "Domingo"
+
+eval printf "%s" \$\{$(date +%u)}\ \', $(date +%d/%m/%Y)\'

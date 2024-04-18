@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PS1="\fw╭─\fg\e $USER\fw@\fg\e $(hostname) \fb\fo\$(pwd | sed "s,$HOME,~,")\fw\fD\n╰─➤ "
+
+alias ls="ls --color"
+alias cp="cp -v -i"
+alias mv="mv -v -i"
+alias gtop="gotop -l gotop"
+
+set -o emacs
+bindkey --emacs '\^L' clear-and-redraw-all

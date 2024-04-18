@@ -1,0 +1,7 @@
+configuration {
+	modi: "window,drun,run";
+	show-icons: true;
+	terminal: "st";
+}
+
+@theme "~/.cache/wal/colors-rofi-menu.rasi"
