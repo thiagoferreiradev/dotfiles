@@ -1,22 +1,20 @@
 #!/bin/sh
 
 # backgrounds directory
-bgs_dir="$HOME/Downloads/dotfiles/wallpapers/"
+bgs_dir="$(pwd)/"
 
 # terminal directory
 st_dir="$HOME/Downloads/st-0.9/"
 
-cd $bgs_dir
-wal -s -i $bgs_dir$1 >/dev/null
+wal -s -i $bgs_dir$1
 
 cd $st_dir
-make clean >/dev/null
-make >/dev/null
-printf 'needed root privileges for reinstall st\n'
-sudo make install >/dev/null
+make clean
+make
+sudo make install
 
-xrdb -load $HOME/.Xresources >/dev/null
+xrdb -load $HOME/.Xresources
 
 bspc wm -r
 
-printf 'all done!\n'
+betterlockscreen -u $bgs_dir$1
